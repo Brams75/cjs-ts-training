@@ -1,0 +1,62 @@
+1. When is the test useless ?
+
+A useless test is a test who sometimes work sometimes doesn't work, because we didn't covered all details.
+
+
+2. The tests are used to show the absence or presence of defects ?
+
+Both, the test show us if all pass and there are no errors, or if there are defects and developers need to fix the issues.
+
+
+3. What is the difference between an API unit test and a UI acceptance test ?
+
+The api unit test allows us to check if some functionality of the api works as it should. Do not need to simulate clicks, types ... of the user and save time on tests.
+Example: I can test a GET request to check if I can get the data, or if It fail.
+
+A User Interface Acceptance Testing allows us to verify that the parts of the application that the user interacts with work as they should.
+Example: We test a specific case when the user should click on termsAndConditions, and we want to verify if he is redirected on this page or he is not.
+
+
+4. What are the benefits of an ISTQB certification, what are the limits ?
+
+It is a good certification recognized in the world, there are different ranks, foundation level, advanced level & expert level. I don't know.
+
+
+5. Can you tell me about Pros and Cons of Agile method in your day-to-day experience ?
+
+The Agile method is good method because you can give a fast value to the client, progress in the project by iteration, be flexible but not too much. I used SCRUM method in past projects.
+One Cons is that you have to form people to apply well the method, if you do it badly it can be a waste of time.
+
+
+6. How do you define Regression Test ?
+
+Regression test are here to ensure that we do not have older features that break.
+
+7. Name two CI tools and give their usefulness and a specificity.
+
+Jenkins, CircleCI. 
+Jenkins is easy to use, supports almost every OS, is open source, has build in features.
+CircleCI integrates with Bitbucket, GitHub, and GitHub Enterprise, automated parallelization, runs builds using a container or virtual machine, continuous and branch-specific deployment.
+
+8. What is the difference between Gherkin, BDD and Cucumber.js ?
+
+Gerkhin is a language that allows you to do BDD. BDD is an agile method that makes the different trades work. Cucumber.js is a framework that allows us to do BDD by writing our tests in Gerkhin.
+
+9. Explain differences between git pull, git push, git commit.
+
+Git pull get the update of the repository. Git push, push new version of you're repository on the online repository. Git commit save the actual version on local.
+
+10. Sort these locators from the best to the worst:
+
+1. #loginButton 
+2. //a[contains(@class,"header_login")]//input[@id="login_btn"]
+3. //*[@id=”header-banner-1"]/bcdk-mandatory-action-dialog/div/div[2]/button[2]
+
+11. Find the right query to obtain randomly a user ID. His state must be ‘9’, country Italy, hasMoney on 0, and available on 1.
+
+SELECT id FROM userBetclic
+WHERE state = 9
+AND country = 'Italy'
+AND hasMoney = 0
+AND available = 1
+ORDER BY RAND() LIMIT 1;
